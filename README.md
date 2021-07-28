@@ -41,6 +41,19 @@ Each row describes the features of a single Java class. It has fifteen columns:
 
 * **MethodOverrides**: Integer (`0+`) representing how many of the class' methods are overriding others
 
+### Regular classes (RQ2)
+
+As part of the research to answer the question _How are mock classes designed?_, it was needed to select regular (non-mock) classes among the whole classes' population on the projects. Those were randomly selected, with the same number of regular classes as the number of mock classes in each project. The selected classes are present on the file **regular_classes_rq2.csv**.
+
+The columns present on the file are:
+
+* **file**: Path of the file from the main directory of the project. Projects can be identified by the first directory on the path
+
+* **classname**: Name of the analyzed class
+
+* **nummethods**: Total number of methods in the class, including all visibility levels
+
+
 ### Evolutionary data (RQ3)
 
 To answer the research question _How are mock classes modified along a project history?_ data on the original 12 projects history was obtained. This data is present on the file **mock_evolutionary.csv**. The baseline data to be compared, which are randomly selected non-mock classes from the same projects, is on the file **baseline_evolutionary.csv**. One can notice that there is one more line on the mock file than on the baseline one; it is due to a single mock class in a project which is not statistically relevant, so the line was not searched for in the baseline.
