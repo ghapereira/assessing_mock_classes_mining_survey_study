@@ -6,9 +6,10 @@ This repository contains the data extracted from 12 open-source projects regardi
 
 ## Description
 
-### Mining study (file classes_analysis_data.csv)
+### Mining study (file classes_analysis_data.csv and mock_classes.csv)
 
-The data is contained in a text file separated by semicolons (';').
+The data is contained in a text file separated by semicolons (';'). **classes_analysis_data.csv** contains all the classes that were identified in the projects, while **mock_classes.csv** contains only the mock classes.
+
 Each row describes the features of a single Java class. It has fifteen columns:
 
 * **ProjectName**: String representing the project's name, stated as its name on GitHub
@@ -68,7 +69,7 @@ The columns present on the file are:
 
 ### Survey (file SurveyAnswers.ods)
 
-The data is contained in a [ODS file](https://www.iso.org/standard/66363.html), which can be opened by open-source applications such as [LibreOffice](https://www.libreoffice.org/), or commercial desktop/online applications. This is also a format supported by open-source software libraries such as [Pandas](https://pandas.pydata.org/pandas-docs/stable/user_guide/io.html). Each row represents one answer from a developer that answered our survey. The answers are anonimized, and any information on the e-mail answer that was not integral to the survey purposes was scrubbed, such as greetings or personal information related items.
+The data is contained in a [ODS file](https://www.iso.org/standard/66363.html), which can be opened by open-source applications such as [LibreOffice](https://www.libreoffice.org/), or commercial desktop/online applications. This is also a format supported by open-source software libraries such as [Pandas](https://pandas.pydata.org/pandas-docs/stable/user_guide/io.html). A version in the .xlsx format is also available. Each row represents one answer from a developer that answered our survey. The answers are anonimized, and any information on the e-mail answer that was not integral to the survey purposes was scrubbed, such as greetings or personal information related items.
 
 Missing data is handled by leaving the cell only with a "-" symbol. For the categories attributes, multiple categories are possible for any given answer, so multiple categories are separated by a comma ",".
 
